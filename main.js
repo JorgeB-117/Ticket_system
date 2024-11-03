@@ -15,6 +15,9 @@ async function fetchData() {
         console.error('Error fetching data', error);
         document.getElementById('error-message').style.display = 'block';
         document.getElementById('error-message').textContent = error.message;
+// Task 4: Use finally to Ensure Cleanup
+    } finally {
+        document.getElementById('loading-indicator').style.display = 'none';
     }
 };
 
