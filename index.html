@@ -1,0 +1,40 @@
+<!--Task 1: Setup HTML Structure for the Ticket System-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Tickets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(132, 0, 0);
+        }
+        header {
+            color: white;
+            text-align: center;
+        }
+        .ticket {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Customer Support Tickets</h1>
+    </header>
+    <div class="container">
+        <div id="tickets"></div>
+        <div id="error-message" class="error-message">An error occurred while fetching tickets.</div>
+        <div id="loading-indicator">Loading...</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
