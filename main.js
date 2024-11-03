@@ -36,3 +36,5 @@ function displayTickets(tickets) {
         ticketsContainer.appendChild(ticketElement);
     });
 };
+
+fetchData();
